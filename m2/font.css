@@ -1,0 +1,7 @@
+@charset "utf-8";
+@font-face{
+    font-family: "aps";
+    src:local("aps"),url("./fonts/aps.eot#iefix"),
+    url("./fonts/aps.ttf") format("truetype"),
+    url("./fonts/aps.woff") format("woff");
+}

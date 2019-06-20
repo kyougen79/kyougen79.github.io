@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="알뜰폰 모바일 웹앱">
+    <meta name="keywords" content="U+, 알뜰폰, 유플러스, 모바일, 유알모">
+    <meta name="auther" content="kim">
+    <meta name="description" content="알뜰폰 구입이 수월하고, 가격은 저렴, 서비스는 최대, 가성비 갑">
+    <title>알뜰폰 모바일 웹사이트</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script></script>
+    <link rel="stylesheet" href="https://github.com/necolas/normalize.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        /*hd 부분과 ft 부분에 대한 스타일을 common.css로 이동*/
+    </style>
+    <script src="main.js"></script>
+    <style>
+    body,html{width: 100%; height: 100%; overflow: scroll;}
+        /* background-image: url("./img/pat1.png"); background-repeat: repeat; */
+        .hd{height: 50px; position: fixed; z-index: 80;}
+        .ft{position: fixed; bottom: 0; left: 0; z-index: 80;}
+        .page_title{text-align: center; line-height: 3; padding-top: 50px;}
+        .frm2{clear: both; padding-bottom: 150px;}
+        .frm2 fieldset{border: 0;}
+        .in_frm{display: block; width: 280px;  clear: both; margin: 15px auto; line-height: 3; font-size: 0.9em; color:#222; 
+            border: 2px solid #ccc; border-radius: 30px;}
+        .frm2 .in_frm{color:#222; text-indent: 1em;}
+        .btn_frm{display: block; float: left; width: 100px; line-height: 32px; text-align: center; margin: 10px; 
+            background: #222; color: #fff; border-radius: 20px;}
+        .frm_btn_frame{width: 240px; margin: 20px auto;}
+    </style>
+</head>
+<body>
+<!-- div.wrap>header.hd+figure.vs+nav.shortcut+footer.ft -->
+<div class="wrap">
+    <header class="hd">
+        <a href="index.html" class="logo" title="logo"></a>
+        <input type="checkbox" class="ck_item" id="ck1">
+        <input type="checkbox" class="ck_item" id="ck2">
+        <nav class="top_btn">
+            <ul>
+                <li class="search">
+                    <label for="ck1">검색</label>
+                </li>
+                <li class="menu">
+                    <label for="ck2">메뉴</label>
+                </li>
+            </ul>    
+        </nav>
+        <nav id="find_nav">
+            <form action="" class="frm1">
+                <input type="text" id="keyword" class="in_data" placeholder="검색어 입력">
+                <input type="submit" value="검색" class="frm_btn">
+            </form>
+            <p class="hash_title">아래의 자주 사용하는 메뉴 링크를 이용하세요</p>
+            <ul class="hash">
+                <li class="item1"><a href="sub1.html">해시메뉴1</a></li>
+                <li class="item2"><a href="sub2.html">해시메뉴2</a></li>
+                <li class="item3"><a href="sub3.html">해시메뉴3</a></li>
+                <li class="item4"><a href="sub4.html">해시메뉴4</a></li>
+                <li class="item5"><a href="sub5.html">해시메뉴5</a></li>
+            </ul>
+            <label for="ck1" class="close"></label>  
+        </nav>
+        <nav id="gnb">
+            <ul class="nav">
+                <li class="item1">
+                    <a class="dp1">메뉴1</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴11</a></li>
+                        <li class="it2"><a href="">서브메뉴12</a></li>
+                        <li class="it3"><a href="">서브메뉴13</a></li>
+                        <li class="it4"><a href="">서브메뉴14</a></li>
+                        <li class="it5"><a href="">서브메뉴15</a></li>
+                    </ul>
+                </li>
+                <li class="item2">
+                    <a class="dp1">메뉴2</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴21</a></li>
+                        <li class="it2"><a href="">서브메뉴22</a></li>
+                        <li class="it3"><a href="">서브메뉴23</a></li>
+                        <li class="it4"><a href="">서브메뉴24</a></li>
+                        <li class="it5"><a href="">서브메뉴25</a></li>
+                    </ul>
+                </li>
+                <li class="item3">
+                    <a class="dp1">메뉴3</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴31</a></li>
+                        <li class="it2"><a href="">서브메뉴32</a></li>
+                        <li class="it3"><a href="">서브메뉴33</a></li>
+                        <li class="it4"><a href="">서브메뉴34</a></li>
+                        <li class="it5"><a href="">서브메뉴35</a></li>
+                    </ul>
+                </li>
+                <li class="item4">
+                    <a class="dp1">메뉴4</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴41</a></li>
+                        <li class="it2"><a href="">서브메뉴42</a></li>
+                        <li class="it3"><a href="">서브메뉴43</a></li>
+                        <li class="it4"><a href="">서브메뉴44</a></li>
+                        <li class="it5"><a href="">서브메뉴45</a></li>
+                    </ul>
+                </li>
+                <li class="item5">
+                    <a class="dp1">메뉴5</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴51</a></li>
+                        <li class="it2"><a href="">서브메뉴52</a></li>
+                        <li class="it3"><a href="">서브메뉴53</a></li>
+                        <li class="it4"><a href="">서브메뉴54</a></li>
+                        <li class="it5"><a href="">서브메뉴55</a></li>
+                    </ul>
+                </li>
+                <li class="item6">
+                    <a class="dp1">메뉴6</a>
+                    <ul class="sub">
+                        <li class="it1"><a href="">서브메뉴61</a></li>
+                        <li class="it2"><a href="">서브메뉴62</a></li>
+                        <li class="it3"><a href="">서브메뉴63</a></li>
+                        <li class="it4"><a href="">서브메뉴64</a></li>
+                        <li class="it5"><a href="">서브메뉴65</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <label for="ck2" class="close"></label>  
+        </nav>
+    </header>
+    <h2 class="page_title">회원가입</h2>
+    <form action="" class="frm2">
+        <fieldset>
+            <input type="text" id="m_id" placeholder="아이디 입력" class="in_frm" name="m_id">
+            <input type="password" id="m_pw" placeholder="암호 입력" class="in_frm" name="m_pw">
+            <input type="password" id="m_pw2" placeholder="암호 확인" class="in_frm" name="m_pw2">
+            <input type="text" id="m_name" placeholder="이름 입력" class="in_frm" name="m_name">
+            <input type="email" id="m_email" placeholder="이메일 입력" class="in_frm" name="m_email">
+            <input type="file" id="m_pic" placeholder="사진 첨부" class="in_frm" name="m_pic">
+            <input type="date" id="m_birth" placeholder="생년월일" class="in_frm" name="m_birth">            
+        </fieldset>
+        <fieldset class="frm_btn_frame">
+            <input type="submit" class="btn_frm" value="회원가입">
+            <input type="reset" class="btn_frm" value="취소">
+        </fieldset>
+    </form>
+    <footer class="ft">
+        <div class="ft_wrap">
+            <p class="copyright">
+                (주)미디어로그 주소 : 서울특별시 마포구 월드컵북로 416 (상암동) LG 유플러스<br>
+                대표이사 : 이용재 &nbsp;&nbsp; 사업자 등록번호 : 114-81-96221 <br>
+                통신판매신고 번호 : 제 2012-서울마포-0954호 <br>
+            </p>
+            <br>
+            <address class="copy">COPYRIGHT © MEDIALOG CORP.  ALL RIGHTS RESERVED.</address>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
