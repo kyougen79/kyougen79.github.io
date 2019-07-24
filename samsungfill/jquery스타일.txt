@@ -1,0 +1,36 @@
+$(document).ready(function(){
+	$(window).resize(function(){
+	var wd = $(window).width();
+		if(wd(=767){
+		$("#tstyle").remove();
+		$("#dstyle").remove();
+		$("head").append("[link rel='stylesheet'href='mobile.css' id='mstyle']");
+	}else if(wd)=768 && wd(=959){
+		$("#mstyle").remove();
+		$("#dstyle").remove();
+		$("head").append("[link rel='stylesheet'href='tablet.css'id='tstyle']");
+	}else {
+		$("#mstyle").remove();
+		$("#tstyle").remove();
+		$("head").append("[link rel='stylesheet'href='desktop.css'id='dstyle]");
+	}
+});resize();
+});
+
+$(document).ready(function(){
+	$(window).resize(function(){
+	if(matchMedia("screen and (max-width:767px)").matches){
+		$("#tstyle").remove();
+		$("#dstyle").remove();
+		$("head").append("[link rel='stylesheet'href='mobile.css' id='mstyle']");
+	}else if(matchMedia("screen and (min-width:768px) and (max-width:959px)").matches){
+		$("#mstyle").remove();
+		$("#dstyle").remove();
+		$("head").append("[link rel='stylesheet'href='tablet.css'id='tstyle']");
+	}else {
+		$("#mstyle").remove();
+		$("#tstyle").remove();
+		$("head").append("[link rel='stylesheet'href='desktop.css'id='dstyle]");
+	}
+});resize();
+});

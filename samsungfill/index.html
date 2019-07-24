@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 userscalable">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>삼성 FEEL 의원</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ::-webkit-scrollbar{display: none;}
+        body, html{width: 100%;height: 100%; -ms-overflow-style: none;}
+        ul{list-style: none;}
+        img{border: 0;}
+        a{text-decoration: none;}
+        button,label,input{border: 0;outline: 0;background-image: none;background-color: transparent; user-select:none;}
+
+        .hd{width: 100vw;height: 80px;background-color: #4b4b4b;}
+        .logo img{width: 120px;height: 60px; margin: 10px 45%;}
+        #gnb{width: 100%;margin-left: 40px;margin-top: 10px;}
+        #gnb li{float: left;position: relative;width: 8%;text-align: center;}
+        #gnb li a {display:block; color: #3f3f3f; font-size:1em; font-weight: bold;}
+        #gnb li .sub {position:absolute; width: 100%; background: #fff;  height: 500px; padding-top:20px; left:0; display: none; line-height: 25px; z-index:50;transition:0.8s;}
+        #gnb li .sub li { clear: both;margin-left: -20px;width: 200px;}
+        #gnb li .sub a{font-size: 0.8em; display: block; color: #000;padding-bottom: 10px;}
+        #gnb:hover .sub{display: block;}
+        .vs {width:1023px;height: 560px; overflow:hidden; z-index:1;margin-top: 120px;margin-left: 22%;}
+        .img_box { width:200%; height:100%; }
+        .img_box li { width:50%; height:100%; float:left;}
+        .img_box li img { display:block; width:1023px; height:450px; }
+        .btn_box1 { position:absolute; bottom:320px; width:40px; left:calc(50% - 50px); }
+        .btn_box1 li { width:20px; height:20px; float:left;}
+        .btn_box1 li button { display:block; width:10px; height:10px;border-radius:6px; background:#333; }
+        .btn_box1 li.on button { background:#ff2d76; }
+        
+        .gnb_img{clear: both;width: 100%;height: 510px; background: #333;}
+        .gnb_img_box{width: 100%;margin-left: 200px;}
+        .gnb_img li{float: left;display: block;line-height: 6;margin-top: 20px; margin-left: 20px;}
+
+        .gnb_mid{clear: both;width: 100%;}
+        .gnb_mid_box{}
+        .gnb_mid_box1 li{float: left;}
+        .gnb_mid_box2 li{float: left;}
+
+        .ft{clear: both; width: 100%;height: 300px;background-color: #4b4b4b;}
+        .ft_logo{display: block;}
+    </style>
+    <script>
+    $(document).ready(function(){
+        var wd = parseInt($(".vs").width());
+        $(".btn_box1 li").click(function(){
+            var idx = $(this).index();
+            $(".img_box").not(":animated").animate({"margin-left":wd*idx*-1+"px"},600);
+            $(".btn_box1 li").removeClass("on");
+            $(this).addClass("on");
+        });
+    });
+    </script>
+</head>
+<body>
+    <header class="hd">
+        <a href="#" class="logo"><img src="./img/logo.png" alt=""></a>
+    <nav id="gnb">
+            <ul>
+                <li>
+                    <a href="">삼성필소개</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">삼성필의원소개</a></li>
+                        <li class="sb_item2"><a href="#">의료진소개</a></li>
+                        <li class="sb_item3"><a href="#">진료안내</a></li>
+                        <li class="sb_item4"><a href="#">보유장비</a></li>
+                        <li class="sb_item5"><a href="#">내부시설</a></li>
+                        <li class="sb_item6"><a href="#">찾아오시는길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">피부질환</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">점/검버섯</a></li>
+                        <li class="sb_item2"><a href="#">사마귀/티눈</a></li>
+                        <li class="sb_item3"><a href="#">비립종/한관종</a></li>
+                        <li class="sb_item4"><a href="#">혈관종/주사비</a></li>
+                        <li class="sb_item5"><a href="#">지루성피부염</a></li>
+                        <li class="sb_item6"><a href="#">아토피</a></li>
+                        <li class="sb_item7"><a href="#">대상포진</a></li>
+                        <li class="sb_item8"><a href="#">피지낭종</a></li>
+                        <li class="sb_item9"><a href="#">무좀</a></li>
+                        <li class="sb_item10"><a href="#">습진</a></li>
+                        <li class="sb_item11"><a href="#">두드러기</a></li>
+                        <li class="sb_item12"><a href="#">모공각화증(닭살)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">피부레이저</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">여드름/흉터</a></li>
+                        <li class="sb_item2"><a href="#">기미/색소/미백</a></li>
+                        <li class="sb_item3"><a href="#">주름/모공/탄력</a></li>
+                        <li class="sb_item4"><a href="#">여성제모</a></li>
+                        <li class="sb_item5"><a href="#">남성제모</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">쁘띠성형</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">보톡스</a></li>
+                        <li class="sb_item2"><a href="#">필러</a></li>
+                        <li class="sb_item3"><a href="#">더모톡신</a></li>
+                        <li class="sb_item4"><a href="#">물광/꿀광주사</a></li>
+                        <li class="sb_item5"><a href="#">윤곽주사</a></li>
+                        <li class="sb_item6"><a href="#">필 울트라브이리프팅</a></li>
+                        <li class="sb_item7"><a href="#">필 동안 실리프팅</a></li>
+                        <li class="sb_item8"><a href="#">필 헤어핀리프팅</a></li>
+                        <li class="sb_item9"><a href="#">필 밴드리프팅</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">스페셜성형</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">자연유착쌍커풀</a></li>
+                        <li class="sb_item2"><a href="#">매직하이코</a></li>
+                        <li class="sb_item3"><a href="#">귀족수술(팔자주름)</a></li>
+                        <li class="sb_item4"><a href="#">웨딩패키지</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">바디/체형관리</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">카복시테라피</a></li>
+                        <li class="sb_item2"><a href="#">HPL</a></li>
+                        <li class="sb_item3"><a href="#">중저주파</a></li>
+                        <li class="sb_item4"><a href="#">비키니주사</a></li>
+                        <li class="sb_item5"><a href="#">여신주사(LLD)</a></li>
+                        <li class="sb_item6"><a href="#">걸그룹주사<br>(슈퍼MPL)</a></li>
+                        <li class="sb_item7"><a href="#">클라투360</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">탈모/두피관리</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">탈모탈출솔루션</a></li>
+                        <li class="sb_item2"><a href="#">두피진단</a></li>
+                        <li class="sb_item3"><a href="#">원형탈모</a></li>
+                        <li class="sb_item4"><a href="#">염증성지루성탈모</a></li>
+                        <li class="sb_item5"><a href="#">여성탈모</a></li>
+                        <li class="sb_item6"><a href="#">유전형탈모</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">안티에이징</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">리쥬란힐러</a></li>
+                        <li class="sb_item2"><a href="#">135주사</a></li>
+                        <li class="sb_item3"><a href="#">아기주사/연어주사</a></li>
+                        <li class="sb_item4"><a href="#">마녀주사</a></li>
+                        <li class="sb_item5"><a href="#">PRP(자가혈재생술)</a></li>
+                        <li class="sb_item6"><a href="#">웰에이징검사</a></li>
+                        <li class="sb_item7"><a href="#">웰빙주사</a></li>
+                        <li class="sb_item8"><a href="#">울쎄라</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">메디컬스킨케어</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">수분보습케어</a></li>
+                        <li class="sb_item2"><a href="#">화이트닝케어</a></li>
+                        <li class="sb_item3"><a href="#">여드름케어</a></li>
+                        <li class="sb_item4"><a href="#">탄력리프팅케어</a></li>
+                        <li class="sb_item5"><a href="#">진정재생케어</a></li>
+                        <li class="sb_item6"><a href="#">메디컬필링</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">이벤트&소식</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">공지사항</a></li>
+                        <li class="sb_item2"><a href="#">이벤트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">리얼스토리</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">시술전후사진</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">상담센터</a>
+                    <ul class="sub">
+                        <li class="sb_item1"><a href="#">온라인상담</a></li>
+                        <li class="sb_item2"><a href="#">카톡상담</a></li>
+                    </ul>
+                </li>
+            </ul>
+    </nav>
+    </header>
+    <figure class="vs">
+        <ul class="img_box">
+            <li class="item1 on"><a href=""><img src="./img/bg1.png" alt=""></a></li>
+            <li class="item2"><a href=""><img src="./img/bg2.png" alt=""></a></li>
+        </ul>
+            <ul class="btn_box1">
+            <li class="item1 on"><button></button></li>
+            <li class="item2"><button></button></li>
+        </ul>
+    </figure>
+    <div class="gnb_img">
+        <ul class="gnb_img_box">
+            <li class="gnb_img1"><a href=""><img src="./img/gnb_img1.png" alt=""></a></li>
+            <li class="gnb_img2"><a href=""><img src="./img/gnb_img2.png" alt=""></a></li>
+            <li class="gnb_img3"><a href=""><img src="./img/gnb_img3.png" alt=""></a></li>
+            <li class="gnb_img4"><a href=""><img src="./img/gnb_img4.png" alt=""></a></li>
+            <li class="gnb_img5"><a href=""><img src="./img/gnb_img5.png" alt=""></a></li>
+            <li class="gnb_img6"><a href=""><img src="./img/gnb_img6.png" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="gnb_mid">
+            <ul class="gnb_mid_box1">
+                <li class="gnb_mid1"><a href=""><img src="./img/mid_bn01.png" alt=""></a></li>
+                <li class="gnb_mid2"><a href=""><img src="./img/mid_bn02.png" alt=""></a></li>
+            </ul>
+            <ul class="gnb_mid_box2">
+                <li class="gnb_mid3"><a href=""><img src="./img/mid_bn03.png" alt=""></a></li>
+                <li class="gnb_mid4"><a href=""><img src="./img/mid_bn04.png" alt=""></a></li>
+                <li class="gnb_mid5"><a href=""><img src="./img/mid_bn05.png" alt=""></a></li>
+            </ul>
+            <ul class="gnb_mid_box3">
+                <li class="gnb_mid6_1"><a href=""><img src="./img/mid_bn06_1.png" alt=""></a></li>
+                <li class="gnb_mid6_2"><a href=""><img src="./img/mid_bn06_2.png" alt=""></a></li>
+                <li class="gnb_mid6_3"><a href=""><img src="./img/mid_bn06_3.png" alt=""></a></li>
+                <li class="gnb_mid6_4"><a href=""><img src="./img/mid_bn06_4.png" alt=""></a></li>
+                <li class="gnb_mid6_5"><a href=""><img src="./img/mid_bn06_5.png" alt=""></a></li>
+            </ul>
+        </div>
+    <footer class="ft">
+        <a href="#" class="ft_logo"><img src="./img/logo.png" alt=""></a>
+    </footer>
+</body>
+</html>

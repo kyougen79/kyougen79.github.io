@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 userscalable">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>신라호텔</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ::-webkit-scrollbar{display: none;}
+        body, html{width: 100%;height: 100%; -ms-overflow-style: none;}
+        ul{list-style: none;}
+        img{border: 0;}
+        a{text-decoration: none;}
+        button,label,input{border: 0;outline: 0;background-image: none;background-color: transparent; user-select:none;}
+
+        .container{width: 100%;height: 100%;}
+        #hd{width: 100%;}
+        .logo{display: block;text-align: center;margin-top: 30px;margin-bottom: 31px;}
+        .btn_gnb{background: #fff;width: 150px;height: 150px;right: 0;position: absolute; top: 0;}
+        .btn_close{background: #f1e3c4;width: 150px;height: 150px;position: absolute;right: 0;top: 0;z-index: 999;}
+        #gnb{width: 100%;height: 100%;background: #f1e3c4;position: absolute;top: 0px;right: -110%;transition: 0.6s;z-index: 9999;}
+        #gnb.on{right: 0;}
+        .logo1{display: block;text-align: center;margin-top: 200px;margin-bottom: 100px;}
+        #gnb ul{width: 1200px;height: 100%;margin: 0 auto;overflow: hidden;}
+        #gnb ul h3{display: block;padding: 0 60px;font-size: 36px;color: #ffffff;line-height: 1;margin-bottom: 50px;text-align: center;}
+        #gnb li{float: left; width: 33.3333%;height: 100%;box-sizing: border-box;}
+        #gnb li a{position: relative;display: block;font-size: 16px;font-weight: bold; padding: 0 60px;color: #000000;line-height: 1;margin-bottom: 20px;text-align: center;}
+        #gnb li a:hover{color:#ff9100}
+        .wrap{width: 100%;height: 100%;}
+        .wrap li{width: 33.3333%;height: 100%;float: left;background-repeat: no-repeat;}        
+        .wrap li:after{background-color: rgba(0,0,0,0.5);width: 100%;height: 100%;display: block;content: "";}
+        .item1{background-image: url(./img/bn1.jpg);background-position: -320px center;}
+        .item1:hover:after{opacity: 0;}
+        .item2{background-image: url(./img/bn2.jpg);background-position: -330px center;}
+        .item2:hover:after{opacity: 0;}
+        .item3{background-image: url(./img/bn3.jpg);background-position: -100px center;}
+        .item3:hover:after{opacity: 0;}
+        .txt{position: absolute;}
+    </style>
+    <style>
+        @media screen and (max-width:767px){/*max-width:이하*/
+        /*모바일*/
+            .wrap{width: 300%;margin-left: -100%;}
+        }
+        @media screen and (min-width:768px) and (max-width:959px){
+            /*태블릿*/
+            .wrap{width: 150%;margin-left: 0;}
+        }
+        @media screen and (min-width:960px) and (max-width:1279px){
+            /*데스크탑*/
+            .wrap{width: 100%;margin-left: 0;}
+        }
+        @media screen and (min-width:1280px){
+            /*고해상도데스크탑*/
+            .con{width: 1280px;}
+            .wrap{width: 100%;margin-left: 0;}
+    }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn_gnb").click(function(){
+                $("#gnb").addClass("on");
+            });
+            $(".btn_close").click(function(){
+                $("#gnb").removeClass("on");
+            });
+        });
+</script>
+</head>
+<body>
+<div class="container">
+<header id="hd">
+    <a href="" class="logo"><img src="./img/logo1.png" alt=""></a>
+    <button class="btn_gnb"><img src="./img/btn.png" alt=""></button>
+    
+</header>
+    <nav id="gnb">
+        <a href="" class="logo1"><img src="./img/logo1.png" alt=""></a>
+        <button class="btn_close"><img src="./img/clo_btn.png" alt=""></button>
+        <ul class="sub">
+        <li class="sub1">
+            <h3>호텔신라 소개</h3>
+            <a href="">개요</a>
+            <a href="">서울신라호텔</a>
+            <a href="">제주신라호텔</a>
+            <a href="">신라스테이</a>
+            <a href="">수상이력</a>
+            <a href="">고객문의</a>
+        </li>
+        <li class="sub2">
+            <h3>고객문의</h3>
+            <a href="">연락처</a>
+            <a href="">문의하기</a>
+        </li>
+        <li class="it1">
+        <h3>신라리워즈</h3>
+            <a href="">회원특전</a>
+            <a href="">포인트 안내</a>
+            <a href="">회원전용상품</a>
+            <a href="">구 멤버십 포인트 사용안내</a>
+            <a href="">신라리워즈 전환안내</a>
+            <a href="">신라리워즈 문의</a>
+        </li>
+            <ul>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">문의하기</a></li>
+            </ul>
+        </ul>
+    </nav>
+<ul class="wrap">
+        <li class="item1">
+            <span class="txt">신라스테이<br>
+                <b>R</b>EWARDS <b>3</b> <b>D</b>AYS <b>S</b>ALE
+            </span>
+            <figure class="sub_wrap">
+                <div class="img_box1"></div>
+                <div class="img_box2"></div>
+                <div class="img_box3"></div>
+                <div class="img_box4"></div>
+                <div class="img_box5"></div>
+                <div class="img_box6"></div>
+            </figure>
+        </li>
+        <li class="item2">
+            <span class="txt">제주신라호텔<br>
+                <b>R</b>EWARDS <b>W</b>ONDER <b>P</b>OOL <b>S</b>UMMER
+            </span>
+        </li>
+        <li class="item3">
+                <span class="txt">서울신라호텔<br>
+                    <b>M</b>ember <b>E</b>xclusive <br>2019.01.01 ~ 2019.09.30
+                </span>
+            </li>
+</ul>
+</div>
+<footer id="ft"></footer>
+</body>
+</html>
