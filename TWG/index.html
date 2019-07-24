@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TWG</title>
+    <style>
+        *{margin: 0; padding: 0;background: #000;}
+        ::-webkit-scrollbar{display: none;}
+        body, html{width: 100%;height: 100%; -ms-overflow-style: none;}
+        ul{list-style: none;}
+        img{border: 0;}
+        a{text-decoration: none;}
+        button,label,input{border: 0;outline: 0;background-image: none;background-color: transparent; user-select:none;}
+
+        .wrap{width: 100%;height: 100%;}
+        .logo{text-align: center;display: block;margin-top: 30px;}
+        .line{width: 120px;height: 80px;display: block;margin: 20px auto;}
+        .radio1{display: none;}
+        .lin{width: 8px;height: 25px; background: #fff; border-radius: 5px;margin: 8px;display: block;float: left; cursor: pointer;}
+        #ra1:checked ~ .line #lin1{width: 7px;height: 60px;transition: 0.6s;background-color: gold;}
+        #ra2:checked ~ .line #lin2{width: 7px;height: 60px;transition: 0.6s;background-color: gold;}
+        #ra3:checked ~ .line #lin3{width: 7px;height: 60px;transition: 0.6s;background-color: gold;}
+        #ra4:checked ~ .line #lin4{width: 7px;height: 60px;transition: 0.6s;background-color: gold;}
+        #ra5:checked ~ .line #lin5{width: 7px;height: 60px;transition: 0.6s;background-color: gold;}
+        .img_wrap{clear: both; width: 100%;height: 100%;}
+        .img_box{width: 100%;}
+        .imgs{width: 320px;height: 320px;float: left;margin-left: 120px;margin-top: 30px;}
+        .imgs{transform: rotateX()}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <a href="" class="logo"><img src="./img/logo-large.png" alt=""></a>
+            <ul class="bar">
+                <li class="bar_lin">
+                    <input type="radio" name="radio" class="radio1" id="ra1" checked>
+                    <input type="radio" name="radio" class="radio1" id="ra2">
+                    <input type="radio" name="radio" class="radio1" id="ra3">
+                    <input type="radio" name="radio" class="radio1" id="ra4">
+                    <input type="radio" name="radio" class="radio1" id="ra5">
+                    <div class="line">
+                        <label for="ra1" class="lin" id="lin1"></label>
+                        <label for="ra2" class="lin" id="lin2"></label>
+                        <label for="ra3" class="lin" id="lin3"></label>
+                        <label for="ra4" class="lin" id="lin4"></label>
+                        <label for="ra5" class="lin" id="lin5"></label>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <figure class="img_wrap">
+            <ul class="img_box">
+                <li class="imgs">
+                    <a href="">
+                        <img src="./img/tea1.png" alt="">
+                    </a>
+                    <span class="txt">STAMFORD RAFFLES TEA</span>
+                </li>
+                <li class="imgs">
+                    <a href="">
+                        <img src="./img/tea2.png" alt="">
+                    </a>
+                    <span class="txt">2019 DARJEELING NOUVEAU</span>
+                </li>
+                <li class="imgs">
+                    <a href="">
+                        <img src="./img/tea3.png" alt="">
+                    </a>
+                    <span class="txt">BREAKFAST BULLDOG TEA</span>
+                </li>
+                <li class="imgs">
+                    <a href="">
+                        <img src="./img/tea4.png" alt="">
+                    </a>
+                    <span class="txt">CHA KING TEA</span>
+                </li>
+            </ul>
+            <ul class="img_box">
+                    <li class="imgs">
+                        <a href="">
+                            <img src="./img/tea5.png" alt="">
+                        </a>
+                        <span class="txt">HAUTE COUTURE TEA</span>
+                    </li>
+                    <li class="imgs">
+                        <a href="">
+                            <img src="./img/tea6.png" alt="">
+                        </a>
+                        <span class="txt">MOROCCAN SAHARA TEA</span>
+                    </li>
+                    <li class="imgs">
+                        <a href="">
+                            <img src="./img/tea7.png" alt="">
+                        </a>
+                        <span class="txt">BREAKFAST KING TEA</span>
+                    </li>
+                    <li class="imgs">
+                        <a href="">
+                            <img src="./img/tea8.png" alt="">
+                        </a>
+                        <span class="txt">BREAKFAST QUEEN TEA</span>
+                    </li>
+                </ul>
+                <ul class="img_box">
+                        <li class="imgs">
+                            <a href="">
+                                <img src="./img/tea9.png" alt="">
+                            </a>
+                            <span class="txt">SINGAPORE BREAKFAST TEA</span>
+                        </li>
+                        <li class="imgs">
+                            <a href="">
+                                <img src="./img/tea10.png" alt="">
+                            </a>
+                            <span class="txt">2019 DARJEELING NOUVEAU</span>
+                        </li>
+                        <li class="imgs">
+                            <a href="">
+                                <img src="./img/tea11.png" alt="">
+                            </a>
+                            <span class="txt">BREAKFAST BULLDOG TEA</span>
+                        </li>
+                        <li class="imgs">
+                            <a href="">
+                                <img src="./img/tea12.png" alt="">
+                            </a>
+                            <span class="txt">CHA KING TEA</span>
+                        </li>
+                    </ul>
+                    <ul class="img_box">
+                            <li class="imgs">
+                                <a href="">
+                                    <img src="./img/tea13.png" alt="">
+                                </a>
+                                <span class="txt">STAMFORD RAFFLES TEA</span>
+                            </li>
+                            <li class="imgs">
+                                <a href="">
+                                    <img src="./img/tea14.png" alt="">
+                                </a>
+                                <span class="txt">2019 DARJEELING NOUVEAU</span>
+                            </li>
+                            <li class="imgs">
+                                <a href="">
+                                    <img src="./img/tea15.png" alt="">
+                                </a>
+                                <span class="txt">BREAKFAST BULLDOG TEA</span>
+                            </li>
+                            <li class="imgs">
+                                <a href="">
+                                    <img src="./img/tea16.png" alt="">
+                                </a>
+                                <span class="txt">CHA KING TEA</span>
+                            </li>
+                        </ul>
+                        <ul class="img_box">
+                                <li class="imgs">
+                                    <a href="">
+                                        <img src="./img/tea17.png" alt="">
+                                    </a>
+                                    <span class="txt">STAMFORD RAFFLES TEA</span>
+                                </li>
+                                <li class="imgs">
+                                    <a href="">
+                                        <img src="./img/tea18.png" alt="">
+                                    </a>
+                                    <span class="txt">2019 DARJEELING NOUVEAU</span>
+                                </li>
+                                <li class="imgs">
+                                    <a href="">
+                                        <img src="./img/tea19.png" alt="">
+                                    </a>
+                                    <span class="txt">BREAKFAST BULLDOG TEA</span>
+                                </li>
+                                <li class="imgs">
+                                    <a href="">
+                                        <img src="./img/tea20.png" alt="">
+                                    </a>
+                                    <span class="txt">CHA KING TEA</span>
+                                </li>
+                            </ul>
+        </figure>
+    </div>
+</body>
+</html>
