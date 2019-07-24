@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Android</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ::-webkit-scrollbar{display: none;}
+        body, html{width: 100%;height: 100%; -ms-overflow-style: none;}
+        ul{list-style: none;}
+        img{border: 0;}
+        a{text-decoration: none;}
+        button,label,input{border: 0;outline: 0;background-image: none;background-color: transparent; user-select:none;}
+
+        .wrap{width: 100%;height: 100vh;}
+        #left{width: 15%;text-align: center;line-height: 4;padding-top: 5%;}
+        #left li a{color: #007c15;font-weight: bold;}
+        .wrap div{display: inline-block;}
+        .search_box{position: relative;left: 2%;margin-top: 15%; background: #008d13;width: 200px;height: 20px;line-height: 20px;padding: 10px;}
+        .search_con{position: absolute;top: 10px;right: 9px;width: 20px;height: 20px;}
+        .search_txt{background: none;border: none;outline: none;color: #000;}
+
+        figure{width: 85%;height: 100%;position: absolute;left: 15%;top: 0;}
+        .side_right{width: 100%;}
+        .img1{background-image: url("./img/photo-phone.png");display: block;width: 846px;height: 690px;margin: 100px auto;}
+        .ft{position: fixed;bottom: 0;}
+    </style>
+</head>
+<body>
+    <aside class="wrap">
+        <nav id="left">
+            <a href="" class="logo"><img src="./img/logo.png" alt=""></a>
+            <ul>
+                <li><a href="">스마트폰</a></li>
+            </ul>
+            <ul>
+                <li><a href="">WEAR</a></li>
+            </ul>
+            <ul>
+                <li><a href="">태블릿</a></li>
+            </ul>
+            <ul>
+                <li><a href="">TV</a></li>
+            </ul>
+            <ul>
+                <li><a href="">AUTO</a></li>
+            </ul>
+            <ul>
+                <li><a href="">엔터프라이즈</a></li>
+            </ul>
+            <div class="search_box">
+                <input type="text" class="search_txt" name="" value="검색어를 입력하세요">
+                <a href="" class="search_btn"><img src="./img/btn_search.png" alt="" class="search_con"></a>
+            </div>
+        </nav>
+        <figure class="right" >
+            <ul class="side_right">
+                <li class="img1"><b>마음껏 사진 찍기</b><br>Google 포토의 저장용량은 무제한, 무료입니다.<br>마음껏 사진을 찍어보세요. <br> <a href="">자세히보기</a></li>
+                <li class="img2"><a href=""></a></li>
+                <li class="img3"><a href=""></a></li>
+                <li class="img4"><a href=""></a></li>
+            </ul>
+        </figure>
+    </aside>
+
+    <footer>
+        <a href="https://google.com" class="ft_logo"><img src="./img/googlelogo.png" alt=""></a>
+    </footer>
+</body>
+</html>

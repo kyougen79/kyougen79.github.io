@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="LH">
+    <meta name="author" content="KW">
+    <meta name="keywords" content="LH">
+    <meta name="copyright" content="">
+    <!-- 기본 셋팅시 모바일 메신저로 넘기기 위한 셋팅 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LH">
+    <meta property="og:image" content="./img/logo.png">
+    <meta property="og:description" content="LH">
+    <title>LH한국토지주택공사</title>
+    <link rel="shorcut" href="./ico/favicon.png">
+    <link rel="stylesheet" href="./fnt.css">
+    <link rel="stylesheet" href="./common.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./mobile.css" type="text/css" media="screen and (max-width:750px)">
+    <link rel="stylesheet" href="./tablet.css" type="text/css" media="screen and (min-width:751px) and (max-width:1000px)">
+    <link rel="stylesheet" href="./desktop.css" type="text/css" media="screen and (min-width:1001px)">
+</head>
+<style>
+
+.header_wrap, .main_wrap{width: 92%;margin: 0 auto;}
+
+</style>
+<script>
+    $(document).ready(function(){
+        var wd = parseInt($(".vs").width());
+        $(".btn_box li").click(function(){
+            var idx = $(this).index();
+            $(".img_box").not(":animated").animate({"margin-left":wd*idx*-1+"px"},600);
+            $(".btn_box li").removeClass("on");
+            $(this).addClass("on");
+        });
+    });
+</script>
+<body>
+    <header class="hd">
+        <div class="header_wrap">
+            <a href="" class="logo"></a>
+            <nav id="tnb">
+                <ul class="loc desk">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">민원</a></li>
+                    <li><a href="#">고객제안</a></li>
+                </ul>
+                <div class="lang">
+                    <p class="cur desk">
+                        <ul class="lang_sel">
+                            <li><a href="">한국어</a></li>
+                            <li><a href="">중국어</a></li>
+                            <li><a href="">일본어</a></li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="lst_btn" class="mo"><a href=""><img src="./ico/btn_sitemap.png" alt=""></a></div>
+                <div id="search_btn"><a href=""><img src="./ico/btn_search.png" alt=""></a></div>
+            </nav>
+            <nav id="gnb">
+                <ul>
+                    <li class="dp1 it1">
+                        <a href="">정보공개</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">정보공개제도안내</a></li>
+                            <li class="dp2"><a href="">정보목록</a></li>
+                            <li class="dp2"><a href="">LH사규</a></li>
+                            <li class="dp2"><a href="">정보공개청구</a></li>
+                            <li class="dp2"><a href="">이의신청접수</a></li>
+                            <li class="dp2"><a href="">정보보호</a></li>
+                        </ul>
+                    </li>
+                    <li class="dp1 it2">
+                        <a href="">열린경영</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">경영공시</a></li>
+                            <li class="dp2"><a href="">지속가능경영</a></li>
+                            <li class="dp2"><a href="">윤리경영</a></li>
+                            <li class="dp2"><a href="">사회공헌</a></li>
+                            <li class="dp2"><a href="">청렴알리미</a></li>
+                            <li class="dp2"><a href="">동반성장</a></li>
+                        </ul>
+                    </li>
+                    <li class="dp1 it3">
+                        <a href="">고객지원</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">새소식</a></li>
+                            <li class="dp2"><a href="">토지수익연계채권</a></li>
+                            <li class="dp2"><a href="">고객헌장</a></li>
+                            <li class="dp2"><a href="">고객신고</a></li>
+                            <li class="dp2"><a href="">고객제안</a></li>
+                            <li class="dp2"><a href="">민원</a></li>
+                        </ul>
+                    </li>
+                    <li class="dp1 it4">
+                        <a href="">주요사업</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">도시조성사업</a></li>
+                            <li class="dp2"><a href="">도시재생사업</a></li>
+                            <li class="dp2"><a href="">지역균형사업</a></li>
+                            <li class="dp2"><a href="">공공주택사업</a></li>
+                            <li class="dp2"><a href="">주거복지사업</a></li>
+                            <li class="dp2"><a href="">국가정책사업</a></li>
+                        </ul>
+                    </li>
+                    <li class="dp1 it5">
+                        <a href="">뉴스룸</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">뉴스룸 메인</a></li>
+                            <li class="dp2"><a href="">프레스 센터</a></li>
+                            <li class="dp2"><a href="">홍보자료</a></li>
+                            <li class="dp2"><a href="">특별기획</a></li>
+                            <li class="dp2"><a href="">LH사보</a></li>
+                            <li class="dp2"><a href="">SNS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dp1 it6">
+                        <a href="">LH소개</a>
+                        <ul class="sub">
+                            <li class="dp2"><a href="">LH개요</a></li>
+                            <li class="dp2"><a href="">CEO</a></li>
+                            <li class="dp2"><a href="">주요연혁</a></li>
+                            <li class="dp2"><a href="">조직 및 연락처</a></li>
+                            <li class="dp2"><a href="">채용정보</a></li>
+                            <li class="dp2"><a href="">LH스포츠단</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main" id="main1">
+        <div class="main_wrap">
+            <span class="ma1_tit"><b>국민</b>곁에 더 가까이<br><b>다가</b>갑니다.</span>
+            <figure class="ma1_bn">
+                <img src="./img/bn11.jpg" alt="" class="ma1_bn1">
+                <a href="" class="ma1_bn2"><img src="./ico/lh_center_more.png" alt="자세히보기"></a>
+            </figure>
+                <figure class="vs">
+        <ul class="img_box">
+            <li class="item1">
+                <a href="">
+                    <img src="./img/bn1_1.jpg" alt="배너1">
+                </a>
+            </li>
+            <li class="item2">
+                <a href="">
+                    <img src="./img/bn1_2.jpg" alt="배너2">
+                </a>
+            </li>
+            <li class="item3">
+                <a href="">
+                    <img src="./img/bn1_3.jpg" alt="배너3">
+                </a>
+            </li>
+        </ul>
+        <ul class="btn_box">
+            <li class="item1 on"><button></button></li>
+            <li class="item2"><button></button></li>
+            <li class="item3"><button></button></li>
+        </ul>
+    </figure>
+        </div>
+    </main>
+    <main class="main" id="main2">
+            <div class="main_wrap"></div>
+    </main>
+    <main class="main" id="main3">
+            <div class="main_wrap">
+                <footer class="ft"></footer>
+            </div>
+    </main>
+</body>
+</html>
