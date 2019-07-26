@@ -42,11 +42,17 @@ Link:[google](https://google.com,"구글")
 
 <!--강조-->
 *single asterisks*
+
 **double asterisks**
+
 _single underscores_
+
 __double underscores__
+
 ++underline++
+
 ~~cancleline~~  <!--취소선-->
 
-![김경원cat1.jpg;
+![고양이](cat1.jpg)
+
 일반문장
