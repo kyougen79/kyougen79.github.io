@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+    <title>Bulma로 만드는 웹페이지 unicef</title> </title>
+    <style>
+        .hero-head{padding-top: 20px;}
+        .hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .hero.is-info .navbar-link:hover, .hero.is-info .navbar-link.is-active {
+    background-color: #00b89c;
+    color: #fff;
+}
+.hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #00d64b;
+}
+
+        .hero.is-info{background: #00d1b2;}
+        .navbar-item img{max-height: 53px;}
+        .hero-body{background-image: url(./img/bg1.png);background-repeat: no-repeat;background-size: 95% 95%;background-position: center center;}
+        .more_box{width: 150px;height: 60px;top: 46%;left: 61%;position: absolute;color: #fff; font-weight: bold;font-size: 20px; background: #868686;text-align: center;line-height: 60px;}
+        .tile{width: 100%;margin: 0 auto;}
+        .intro_wrap{width: 70%;height: 100%;display: block; margin: 0 auto;overflow: hidden;}
+        .txt{font-size: 28px;font-weight: bold;display: block;margin-left: 10%;}
+        .intro_img{margin: 20px 20%;}
+        .intro{width: 100%;height: 600px;margin-left: 8%;}
+        .intro li{width: 40%;height: 45%;float: left;margin-top: 10px;border: 1px dashed #333;padding-top: 30px;padding-left: 30px;}
+        .list2, .list4{margin-left: 10px;}
+        .intro li img{display: block;float: left;}
+        .intro li div{position: absolute;width: 20%;margin-left: 120px;}
+        .intro li h4{font-size: 20px;font-weight: bold;}
+        .intro li p{margin-top: 10px;font-size: 15px;margin-right: 20%;}
+        .active_wrap{clear: both; width: 70%;margin: 0 auto;overflow: hidden;}
+        .active_wrap .left{width: 50%;height: 100%;float: left;margin-left: 8%;margin-top: 20px;}
+        .active_wrap .menu{width: 25%;border: 1px dashed #000;padding: 30px; float: right;margin-right: 11%;margin-top: 20px;}
+        .left_wrap{text-align: center;}
+        aside.menu{height: 820px;}
+        .menu-label{font-size: 20px;padding-bottom: 30px;}
+        .menu-label b{font-size: 24px;}
+        .menu-list li{border-bottom: 2px solid aquamarine;}
+        .menu-list li a{line-height: 40px;font-weight: 600;}
+        .menu-list li img{padding-top: 15px;}
+        
+    </style>
+    <script>
+        $(function(){
+            
+        });
+    </script>
+</head>
+<body>
+<section class="hero is-info is-large">
+    <div class="hero-head">
+        <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="./img/logo.png" alt="Logo" class="logo">
+            </a>
+            <span class="navbar-burger burger" data-target="navbarMenuHeroB">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            </div>
+            <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item is-active">
+                Home
+                </a>
+                <a class="navbar-item">
+                Login
+                </a>
+                <a class="navbar-item">
+                Join
+                </a>
+                <a class="navbar-item">
+                Site map
+                </a>
+                <a class="navbar-item">
+                FAQ
+                </a>
+            </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+<div class="body_wrap">
+    <div class="hero-body"></div>
+    <a href=""><div class="more_box">자세히보기</div></a>
+</div>
+    
+    <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+        <div class="container">
+            <ul>
+            <li class="is-active">
+                <a>소개</a>
+            </li>
+            <li>
+                <a>활동</a>
+            </li>
+            <li>
+                <a>참여</a>
+            </li>
+            <li>
+                <a>후원안내</a>
+            </li>
+            <li>
+                <a>후원하기</a>
+            </li>
+            <li>
+                <a>기부금영수증</a>
+            </li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+</section>
+<br>
+<div class="intro_wrap on"id="page1">
+  <span class="txt">설립이념</span>
+  <div class="intro_img"><img src="./img/introimg.jpg" alt=""></div>
+    <ul class="intro">
+      <li class="list1">
+        <img src="./ico/1.png" alt="">
+        <div>
+          <h4>차별 없는 구호의 정신</h4>
+          <p>유니세프의 설립 정신은 국적과 인종, 이념, 종교, 성별 등과 상관 없이 도움을 필요로 하는 어린이가 있는 곳이면 어디든지 달려가 도움의 손길을 전하는 '차별 없는 구호' 입니다. 이러한 정신에 따라 2차 대전의 패전국들과 중동, 중국의 어린이, 극동의 한국 어린이들까지 모두 유니세프의 도움을 받았습니다.</p>
+        </div>
+      </li>
+      <li class="list2">
+        <img src="./ico/2.png" alt="">
+        <div>
+          <h4>사업동반자와의 긴밀한 협력</h4>
+          <p>유니세프는 각 개발도상국에서 그 나라 정부 및 유엔기구, 인도주의적인 비정부기구들과 협력하여 활동하고 있습니다. 각 분야의 사업동반자와 공동으로 일함으로써 긴급한 구호를 필요로 하는 어린이와 여성에게 더 빠르고 효율적인 지원을 해줄 수 있게 됩니다.</p>
+        </div>
+      </li>
+      <li class="list3">
+        <img src="./ico/3.png" alt="">
+        <div>
+          <h4>가정과 지역사회의 능력 개발</h4>
+          <p>유니세프는 장기적인 차원에서 어린이 상황을 개선하기 위해 각 가정과 지역사회가 스스로의 능력을 키우도록 도와줍니다. 어린이들의 보호자와 지역사회 주민들을 훈련시켜 식수 제공을 위한 펌프나 우물을 관리하도록 하는 한편 어린이의 영양과 질병관리를 가정에서 할 수 있도록 지원하고 있습니다.</p>
+        </div>
+      </li>
+      <li class="list4">
+        <img src="./ico/4.png" alt="">
+        <div>
+          <h4>지속 가능한 인류의 발전 지향</h4>
+          <p>유니세프는 인류의 발전이 어린이가 어떻게 보호받고 자라나는가에 달려있다고 믿습니다. 지구촌이라는 세계공동체는 어린이의 건강과 교육, 평등, 보호를 위해 인도주의 를 실천해야할 의무를 지고 있습니다. 유니세프는 국제사회와 각 나라가 정책을 세우고 재원을 사용함에 있어 어린이를 가장먼저 고려하도록 이끌기 위해 노력합니다.</p>
+        </div>
+      </li>
+    </ul>
+</div>
+<br>
+<div class="active_wrap" id="page2">
+  <span class="txt">활동</span>
+  <div class="left">
+    <div class="left_wrap">
+    <div class="active_bn1"><img src="./img/activebn1.jpg" alt=""></div>
+    <div class="active_bn2"><img src="./img/activebn2.jpg" alt=""></div>
+    <div class="active_bn3"><img src="./img/activebn3.jpg" alt=""></div>
+  </div>
+  </div>
+  <aside class="menu">
+      <p class="menu-label">
+        UNICEF's Work<br>
+        <b>유니세프 사업</b>
+        <br><br>
+        전 세계 어린이들을 위한 유니세프의 중점사업
+      </p>
+      <ul class="menu-list">
+        <li><a>유니세프 중점사업<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>보건<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>에이즈<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>식수와 위생<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>영양<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>교육<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>어린이보호<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+        <li><a>사회통합<img src="./ico/i_plus.png" alt="" style="float: right;"></a></li>
+      </ul>
+    </aside>
+</div>
+<div class="tile join_wrap" id="page3">
+        <div class="tile is-vertical is-8">
+          <div class="tile">
+            <div class="tile is-parent is-vertical">
+              <article class="tile is-child notification is-primary">
+                <p class="title">Vertical...</p>
+                <p class="subtitle">Top tile</p>
+              </article>
+              <article class="tile is-child notification is-warning">
+                <p class="title">...tiles</p>
+                <p class="subtitle">Bottom tile</p>
+              </article>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child notification is-info">
+                <p class="title">함/께/해/요</p>
+                <p class="title">유니세프 착한상품</p>
+                <figure class="image is-4by3">
+                  <a href=""><img src="./img/join_banner2.png"></a>
+                </figure>
+              </article>
+            </div>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification is-danger">
+              <p class="title">Wide tile</p>
+              <p class="subtitle">Aligned with the right tile</p>
+              <div class="content">
+                <!-- Content -->
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
