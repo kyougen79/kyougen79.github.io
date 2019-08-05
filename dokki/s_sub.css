@@ -1,0 +1,36 @@
+.frame{clear: both;width: 100%;position: relative;height: 100%;text-align: center;}
+
+.tabmenu{clear: both;width: 1060px;position: relative;margin: 0 auto;}
+.arrow{position: absolute;width: 100%;top: 47%;z-index: 100;display: none;}
+.prev{position: absolute;left: -50px;float: left;}
+.next{position: absolute;float: right;right: -50px;}
+
+.btnmenu{width: 1060px;height: 430px;overflow: hidden;margin: 0 auto;position: relative;margin-top: 20px;box-sizing: border-box;}
+.list1,.list2,.list3,.list4{position: absolute;top: 0;left: 0;display: none;}
+.none{display: none;}
+.btnmenu li{float: left;margin-left: 16px;margin-top: 10px;}
+.btnmenu li:first-child, .btnmenu li:nth-child(5){margin-left: 0;}
+.btnmenu li img{width: 253px;height: 181px;display: block;}
+#btn{width: 1060px;margin: 20px auto;overflow: hidden;margin-top: 20px;}
+#btn label{float: left;width: 25%;height: 40px;background: #ccc;text-align: center;line-height: 40px;font-size: 20px;}
+
+#btn label:hover{background-color: #fda44a;}
+
+#ra1:checked ~ #btn .btn1{background-color: #fda44a;}
+#ra2:checked ~ #btn .btn2{background-color: #fda44a;}
+#ra3:checked ~ #btn .btn3{background-color: #fda44a;}
+#ra4:checked ~ #btn .btn4{background-color: #fda44a;}
+#ra5:checked ~ #btn .btn3{background-color: #fda44a;}
+#ra6:checked ~ #btn .btn3{background-color: #fda44a;}
+
+
+#ra1:checked ~ .btnmenu .list1{display: block;}
+#ra2:checked ~ .btnmenu .list2{display: block;}
+#ra3:checked ~ .btnmenu .list3{display: block;}
+#ra4:checked ~ .btnmenu .list4{display: block;}
+
+#ra3:checked ~ .arrow{display: block;}
+#ra5:checked ~ .arrow{display: block;}
+#ra6:checked ~ .arrow{display: block;}
+
+#ra5:checked ~ .btnmenu .list3-1{display: block;}

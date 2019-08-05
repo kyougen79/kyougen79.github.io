@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font: 12px "SCDream4";
+    color: #000;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+img{border: none}
+input{border: 0;outline: 0;}
+
+#header {
+    clear: both;
+    width: 1920px;
+    height: 130px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 100;
+}
+
+#header .logo{width: 182px;height: 127px;float: left;margin-left: 400px;}
+#header .gnb {
+    margin-left: 10px;
+    float: left;
+    width: 1000px;
+    height: 127px;
+ /*   overflow: hidden;*/
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#header .gnb li {
+    float: left;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    transition: all 0.4s;
+}
+
+#header .gnb li a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+ 
+}
+
+#header .gnb > li > a:hover {color: #f00;}
+.sub {background:rgb(0, 0, 0,0.6); width: 100%; height: 450px; display: none;position: absolute;top: 127px;left: 0px;box-sizing: border-box;z-index: 100;}
+.submenu {position: absolute;left: 600px;font-size: 16px;font-weight: bold;color: #fff;float: left;width: 190px;padding-top: 20px;transition: all 0.4s;padding-top: 10px;}
+
+.submenu1{}
+.submenu2{left: 730px;}
+.submenu3{left: 830px;}
+.submenu4{left: 950px;}
+.submenu5{left: 1090px;}
+.submenu6{left: 1250px;}
+.submenu7{left: 1350px;}
+
+
+
+
+.gnb:hover ~ .sub{display: block;} 
+.gnb:hover ~ .sub a{color: #fff;} 
+grid3{width: 18.4%;}
+
+.ban1{width: 100%;clear: both;}
+.ban2{width: 100%;clear: both;}
+/*.ban2 .banner2,.ban2 .banner3{float: left;}*/
