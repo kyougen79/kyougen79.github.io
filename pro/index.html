@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wony's 포트폴리오</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        ::-webkit-scrollbar{display: none;}
+        body, html{width: 100%;height: 100%;top: 0;left: 0; -ms-overflow-style: none;}
+        ul{list-style: none;}
+        img{border: 0;}
+        a{text-decoration: none;}
+        button,label,input{border: 0;outline: 0;background-image: none;background-color: transparent; user-select:none;}
+        /* intro.css */
+        .wrap{width: 100%;height: 100%;}
+        .intro_wrap{width: 100%;height: 100%;background: #000;position: absolute;}
+        .intro_circle{width: 600px;height: 600px;border-radius: 300px;background: #ffffff;overflow: hidden;box-sizing: border-box;margin: 10% auto;transition: 0.6s;}
+        .intro_circle .img_box{width: 450px;height: 560px;margin: -40px auto; background-image: url("./img/pic3.png"); animation: img_box 8s;animation-iteration-count: infinite;background-repeat: no-repeat;}
+        .intro_circle .img_box:hover{width: 450px;height: 560px;margin: -40px auto; background-image: url("./img/pic3_1.png");}
+        @keyframes img_box{
+            0%{transform-origin: 50% 0%;transform: rotate(100deg);}
+            50%{transform-origin: 50% 0%;transform: rotate(-100deg);}
+            100%{transform-origin: 50% 0%;transform: rotate(120deg);}
+        }
+        .intro_box{width: 400px;height: 400px;background: #fff;border: 2px solid #edfa7a;transition: 0.5s;position: absolute;top: 31%;left: 38%;display: none;}
+        .intro_box li{font-size: 22px;font-weight: bold;line-height: 100px;text-align: center;}
+        .intro_box li:hover{background: rgba(237,250,122,0.5);}
+
+        /* main.css */
+        .main_wrap{width: 100%;height: 100%;display: none;}
+        .left{width: 29%;height: 100%;float: left;}
+        .left li{width: 400px;height: 480px;margin: 0px auto; padding-top: 40px;}
+        .left li .pf{width: 200px;height: 200px; text-align: center;margin: 0px auto;}
+        .left li .pro_txt{margin-top: 10px;width: 400px;line-height: 35px;border-bottom: steelblue 2px solid;}
+        .left li .m_text{margin: 10px auto;;width: 350px;line-height: 3;font-weight: bold;font-size: 16px;}
+        .graph h2{margin-top: 20px;margin-bottom: 30px;text-align: center;}
+        .le{float: left;margin-left: -40px;margin-top: -18px;}
+        .ra{float: right;margin-right: -40px;margin-top: -18px;text-align: right;}
+        .bar{width: 350px;height: 15px;border: 1px solid rgba(146, 146, 146, 0.4);border-radius: 10px;margin: 40px auto;}        
+        .bar_to1{height: 15px; border-radius: 10px; animation: bar1 2s;animation-fill-mode: both;}
+        .bar_to2{height: 15px; border-radius: 10px; animation: bar2 2s;animation-fill-mode: both;}
+        .bar_to3{height: 15px; border-radius: 10px; animation: bar3 2s;animation-fill-mode: both;}
+        .bar_to4{height: 15px; border-radius: 10px; animation: bar4 2s;animation-fill-mode: both;}
+        .bar_to5{height: 15px; border-radius: 10px; animation: bar5 2s;animation-fill-mode: both;}
+        @keyframes bar1{
+            0%{width: 0; background: none;}
+            100%{width: 189px; background: rgb(255, 60, 60);}
+        }
+        @keyframes bar2{
+            0%{width: 0; background: none;}
+            100%{width: 196px; background: rgb(255, 196, 0);}
+        }
+        @keyframes bar3{
+            0%{width: 0; background: none;}
+            100%{width: 242px; background: rgb(23, 250, 91);}
+        }
+        @keyframes bar4{
+            0%{width: 0; background: none;}
+            100%{width: 200px; background: rgb(0, 162, 255);}
+        }
+        @keyframes bar5{
+            0%{width: 0; background: none;}
+            100%{width: 252px; background: rgb(140, 0, 255);}
+        }
+        
+        .right{width: 69%;height: 100%;float: right;}
+        .working{width: 700px;height: 600px;margin: 0 auto;padding-top: 40px;}
+        .working .pro_txt{margin-top: 10px;width: 700px;line-height: 35px;border-bottom: steelblue 2px solid;}
+        .circle{width: 200px;height: 200px;border-radius: 100px;background: #eee;float: left;overflow: hidden;margin-top: 50px;margin-right: 30px; transform: rotate(180deg)}
+        .circle p{text-align: center;padding-bottom: 40px;font-size: 24px;font-weight: 700; transform: rotate(180deg)}
+        .circle_to1,.circle_to2,.circle_to3,.circle_to4,.circle_to5,.circle_to6{bottom: 0;animation-duration: 3s;animation-fill-mode: both;}
+        .circle_to1{animation-name: cir1;}
+        .circle_to2{animation-name: cir2;}
+        .circle_to3{animation-name: cir3;}
+        .circle_to4{animation-name: cir4;}
+        .circle_to5{animation-name: cir5;}
+        .circle_to6{animation-name: cir6;}
+        @keyframes cir1{
+            0%{height: 0;}
+            100%{height: 180px; background: #f8a;}
+        }
+        @keyframes cir2{
+            0%{height: 0;}
+            100%{height: 140px; background: #f8a;}
+        }
+        @keyframes cir3{
+            0%{height: 0;}
+            100%{height: 100px; background: #f8a;}
+        }
+        @keyframes cir4{
+            0%{height: 0;}
+            100%{height: 100px; background: #f8a;}
+        }
+        @keyframes cir5{
+            0%{height: 0;}
+            100%{height: 90px; background: #f8a;}
+        }
+        @keyframes cir6{
+            0%{height: 0;}
+            100%{height: 170px; background: #f8a;}
+        }
+        
+        .aside_ft{width: 100%;height: 250px;clear: both;}
+        .license_wrap{width: 44%;height: 100%;float: left;}
+        .license_wrap .pro_txt{margin-top: 10px;width: 480px;line-height: 35px;border-bottom: steelblue 2px solid;}
+
+
+        .career_wrap{width: 56%;height: 250px;float: right;}
+        .career_wrap .pro_txt{margin-top: 10px;width: 620px;line-height: 35px;border-bottom: steelblue 2px solid;}
+        .aside_ft table {padding-right: 10px;font-size: 15px;text-align: center;}
+        .aside_ft table tr:first-child{font-size: 16px;font-weight: bold;}
+        .aside_ft td{padding: 5px;padding-top: 10px;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".img_box").click(function(){
+                $(".intro_box").css("display","block");
+                $(".intro_circle").css("opacity","0")
+                $(".main_wrap").css("display","block");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <!--intro-->
+    <div class="wrap">
+        <div class="intro_wrap">
+            <div class="intro_circle">
+                <div class="img_box"></div>
+            </div>
+            <div class="intro_box">
+                <ul>
+                    <li><a href="">Intro</a></li>
+                    <li><a href="#page2">My Info</a></li>
+                    <li><a href="#page3">Gallery</a></li>
+                    <li><a href="#page4">Contact</a></li>
+                </ul>
+            </div>       
+        </div>
+    </div>
+    <!--main-->
+    <div class="main_wrap" id="page2">
+        <aside class="left">
+            <ul>
+                <li class="photo">
+                    <div class="pf"><img src="./img/pic.png" alt=""></div>
+                    <h3 class="pro_txt">PROFILE</h3>
+                    <div class="m_text">
+                        <p>Nickname : Wony's</p>
+                        <p>Birth : 1994.06.14</p>
+                        <p>Address : k__ryu@naver.com</p>
+                        <p>Personality : 호기심 많은 예술가</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="graph">
+                <h2>My Personality Graph</h2>
+                <div class="bar">
+                    <div class="bar_to1"></div>
+                    <span class="le">54%<br>내형형</span><span class="ra">46%<br>외형형</span>
+                </div>
+                <div class="bar">
+                    <div class="bar_to2"></div>
+                    <span class="le">56%<br>현실주의형</span><span class="ra">44%<br>직관형</span>
+                </div>
+                <div class="bar">
+                    <div class="bar_to3"></div>
+                    <span class="le">69%<br>원칙주의형</span><span class="ra">31%<br>이성적사고형</span>
+                </div>
+                <div class="bar">
+                    <div class="bar_to4"></div>
+                    <span class="le">57%<br>탐색형</span><span class="ra">43%<br>계획형</span>
+                </div>
+                <div class="bar">
+                    <div class="bar_to5"></div>
+                    <span class="le">72%<br>신중형</span><span class="ra">28%<br>자기주장형</span>
+                </div>
+            </div>
+        </aside>
+        <aside class="right">
+            <div class="working">
+                <h3 class="pro_txt">WORKING</h3>
+                    <div class="circle">
+                        <div class="circle_to1">
+                            <p>90%</p><p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_to2">
+                            <p>70%</p><p>CSS</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_to3">
+                            <p>50%</p><p>JAVASCRIPT</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_to4">
+                            <p>50%</p><p>SCSS</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_to5">
+                            <p>50%</p><p>PUG</p>
+                        </div>
+                    </div>
+                    <div class="circle">
+                        <div class="circle_to6">
+                            <p>85%</p><p>OFFICE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside_ft">
+                <div class="license_wrap">
+                <h3 class="pro_txt">LICENSE</h3>
+                <table>
+                    <tr>
+                        <td>취득일</td>
+                        <td>자격증명</td>
+                        <td>발행기관</td>
+                    </tr>
+                    <tr>
+                        <td>2010년 03월</td>
+                        <td>정보기술자격(ITQ)인증시험 한글A</td>
+                        <td>한국생산성본부</td>
+                    </tr>
+                    <tr>
+                        <td>2010년 12월</td>
+                        <td>워드프로세스 2급</td>
+                        <td>대한상공회의소</td>
+                    </tr>
+                    <tr>
+                        <td>2011년 02월</td>
+                        <td>新 JLPT N3</td>
+                        <td>일본국제교육협회</td>
+                    </tr>
+                    <tr>
+                        <td>2012년 04월</td>
+                        <td>컴퓨터활용능력 2급</td>
+                        <td>대한상공회의소</td>
+                    </tr>
+                </table>
+                </div>
+                <div class="career_wrap">
+                <h3 class="pro_txt">CARRER</h3>
+                <table>
+                        <tr>
+                            <td>근무기간</td>
+                            <td>회사명</td>
+                            <td>직무</td>
+                        </tr>
+                        <tr>
+                            <td>2010년 12월 ~ 2015년 07월</td>
+                            <td>(주)써밋트시스템</td>
+                            <td>CAD/CAM, 사무보조, JIG조립, 전화응대</td>
+                        </tr>
+                        <tr>
+                            <td>2016년 02월 ~ 2017년 03월</td>
+                            <td>청벽마루가든</td>
+                            <td>음식점 및 카페 개인사업</td>
+                        </tr>
+                        <tr>
+                            <td>2017년 04월 ~ 2018년 02월</td>
+                            <td>카페 HOME</td>
+                            <td>아르바이트</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <!-- <figure class="gallery"></figure> -->
+</body>
+</html>
