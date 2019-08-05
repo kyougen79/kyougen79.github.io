@@ -16,10 +16,10 @@
 
         .container{width: 100%;height: 100%;}
         #hd{width: 100%;}
-        .logo{display: block;text-align: center;margin-top: 30px;margin-bottom: 31px;}
-        .btn_gnb{background: #fff;width: 150px;height: 150px;right: 0;position: absolute; top: 0;}
+        .logo{width: 300px;height: 150px;text-align: center;top: 0;margin: 20px auto;display: block; background-image: url("./img/logo1.png");background-repeat: no-repeat;background-position: center center;}
+        .btn_gnb{background: #fff;width: 150px;height: 150px;right: 0;position: absolute; top: 0px;background-image: url("./img/btn.png");background-repeat: no-repeat;background-position: center center;}
         .btn_close{background: #f1e3c4;width: 150px;height: 150px;position: absolute;right: 0;top: 0;z-index: 999;}
-        #gnb{width: 100%;height: 100%;background: #f1e3c4;position: absolute;top: 0px;right: -110%;transition: 0.6s;z-index: 9999;}
+        #gnb{width: 100%;height: 100%;background: #f1e3c4;position: absolute;top: 0;right: -400%;transition: 0.6s;z-index: 9999;}
         #gnb.on{right: 0;}
         .logo1{display: block;text-align: center;margin-top: 200px;margin-bottom: 100px;}
         #gnb ul{width: 1200px;height: 100%;margin: 0 auto;overflow: hidden;}
@@ -36,12 +36,32 @@
         .item2:hover:after{opacity: 0;}
         .item3{background-image: url(./img/bn3.jpg);background-position: -100px center;}
         .item3:hover:after{opacity: 0;}
-        .txt{position: absolute;}
-    </style>
+        .txt{position: absolute;top: 60%;color: #ffffff;padding-left: 100px}
+        .txt1{position: absolute;top: 65%;color: #ffffff;padding-left: 100px;}
+
+        .localBox{width: 100%;}
+
+
+        /* footer */
+        .footer{ width:1200px; margin:0 auto 0 auto; height:183px; position:relative; background:#f1e3c4;overflow:hidden; }
+   </style>
     <style>
         @media screen and (max-width:767px){/*max-width:이하*/
         /*모바일*/
-            .wrap{width: 300%;margin-left: -100%;}
+            .wrap{width: 300%;box-sizing: border-box;}
+            .wrap li{clear: both;float: none;width: 33.3333%;height: 100%;}
+            .txt{clear: both; padding-left: 10px;width: 100%;}
+            .txt1{clear: both;padding-left: 20px;width: 100%;}
+            .logo{background-image: url("./img/m_logo.gif");width: 232px;height: 90px;margin-left: 30px;}
+            .btn_gnb{background-image: url("./img/btn_m.png");width: 60px;height: 60px;right: 20px;top: 30px;}
+            #gnb{width: 100%;height: 100%;background: #f1e3c4;position: absolute;top: 0;right: -400%;transition: 0.6s;z-index: 9999;}
+            .logo1{display: block;text-align: center;margin-top: 100px;margin-bottom: 50px;}
+            .btn_close{background: #f1e3c4;width: 90px;height: 90px;position: absolute;right: 0;top: 0;z-index: 999;}
+            #gnb ul{width: 300%;margin: 0 auto;}
+            #gnb ul h3{display: block;padding: 0 60px;font-size: 36px;color: #ffffff;line-height: 1;margin-bottom: 70px;text-align: center;}
+            #gnb li{float: none; width: 33.3333%;box-sizing: border-box;}
+            #gnb li a{position: relative;display: block;font-size: 16px;font-weight: bold; padding: 0 60px;color: #000000;line-height: 1;margin-bottom: 20px;text-align: center;}
+
         }
         @media screen and (min-width:768px) and (max-width:959px){
             /*태블릿*/
@@ -72,8 +92,8 @@
 <body>
 <div class="container">
 <header id="hd">
-    <a href="" class="logo"><img src="./img/logo1.png" alt=""></a>
-    <button class="btn_gnb"><img src="./img/btn.png" alt=""></button>
+    <a href="" class="logo"></a>
+    <button class="btn_gnb"></button>
     
 </header>
     <nav id="gnb">
@@ -111,9 +131,8 @@
     </nav>
 <ul class="wrap">
         <li class="item1">
-            <span class="txt">신라스테이<br>
-                <b>R</b>EWARDS <b>3</b> <b>D</b>AYS <b>S</b>ALE
-            </span>
+            <h2 class="txt">신라스테이</h2>
+                <h3 class="txt1">REWARDS 3DAYS SALE</h3>
             <figure class="sub_wrap">
                 <div class="img_box1"></div>
                 <div class="img_box2"></div>
@@ -124,17 +143,83 @@
             </figure>
         </li>
         <li class="item2">
-            <span class="txt">제주신라호텔<br>
-                <b>R</b>EWARDS <b>W</b>ONDER <b>P</b>OOL <b>S</b>UMMER
-            </span>
+            <h2 class="txt">제주신라호텔</h2>
+                <h3 class="txt1">REWARDS WONDER POOL SUMMER</h3>
         </li>
         <li class="item3">
-                <span class="txt">서울신라호텔<br>
-                    <b>M</b>ember <b>E</b>xclusive <br>2019.01.01 ~ 2019.09.30
-                </span>
-            </li>
+            <h2 class="txt">서울신라호텔</h2>
+                <h3 class="txt1">Member Exclusive 2019.01.01 ~ 2019.09.30</h3>
+        </li>
 </ul>
 </div>
-<footer id="ft"></footer>
+<div class="localBox">
+	<div class="localBoxer">
+		<div class="compInfo">
+			<h2 class="logo2">THE SHILLA SEOUL</h2>
+		</div>
+		<div class="brandWrap">
+		  <div class="brand">
+		      <dl class="">
+		          <dt><a href="#">The Shilla</a></dt>
+		          <dd style="display: none;"><a href="#">서울신라호텔</a></dd>
+		          <dd class="logoJeju" style="display: none;"><a href="#">제주신라호텔</a></dd>
+		      </dl>
+		  </div>
+		  <div class="brandStay"><a href="#">신라스테이</a></div>
+		</div>
+		<div class="linkInfo">
+			<dl class="introduction">
+				<dd class="d1"><a href="#"><span>호텔신라 소개</span></a></dd> 
+				<dd class="d2"><a href="#"><span>고객문의</span></a></dd>
+				<dd class="d3"><a href="#"><span>사이트맵</span></a></dd>
+				<dd class="d4"><a href="#"><span>신라리워즈 전환 안내</span></a></dd>
+				
+					<dd class="d5"><a href="#"><span>The Shilla shop</span></a></dd>
+					<dd class="d6"><a href="#"><span>삼성상품권</span></a></dd>
+					<dd class="d7"><a href="#"><span>신라리워즈 전환 안내</span></a></dd>
+				
+			</dl>
+			<dl class="inquiries">
+				<!-- <dt class="dt">Coonect with us</dt> -->
+				<dd class="d1"><a title="Facebook - popup" target="_blank" href="http://www.facebook.com/theshillahotels"><span>Facebook</span></a></dd>
+				<dd class="d2"><a title="Instagram - popup" target="_blank" href="https://www.instagram.com/shillahotels/"><span>인스타그램</span></a></dd>
+				<dd class="d4"><a title="Google+ - popup" href="https://plus.google.com/116571259877956708092" rel="publisher" target="_blank"><span>Google+</span></a></dd>
+				<dd class="d3"><a title="Weibo - popup" target="_blank" href="http://weibo.com/shillahotel"><span>Weibo</span></a></dd>
+			</dl>
+			
+			<dl class="ContactInfo">
+				<dd class="d1"><span>서울신라호텔 02-2233-3131</span></dd> 
+				<dd class="d2"><span>제주신라호텔 064-735-5114</span></dd>
+				<dd class="d3"><span>신라스테이 02-2230-0700</span></dd>
+				<dd class="d4"><span>신라리워즈 02-2230-5528</span></dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="linkBox">
+		<ul>
+			<li class="link1 first"><a href="#">신라리워즈 약관</a></li>
+			<li class="link2"><a href="#">개인정보처리방침</a></li>
+			<li class="link3"><a href="#">이메일무단수집금지</a></li>
+			
+			<li class="link4 last"><a href="">윤리경영</a></li>
+			
+		</ul>
+	</div>
+	<div class="selectLang">
+		<ul>			
+						<li class="en first"><a href="#">English</a></li>
+					
+						<li class="ja"><a href="#">日本語</a></li>
+					
+						<li class="zh last"><a href="#">简体中文</a></li>					
+		</ul>
+	</div> 
+	<div class="adressBox">
+		<p>㈜호텔신라 서울특별시 중구 동호로 249 (우: 04605)  Tel: 02-2233-3131 Fax: 02-2230-3769 사업자등록번호: 203-81-43363 통신판매신고번호: 중구00272호 대표이사 이부진</p>
+	</div>
+	<div class="copyright"><p>COPYRIGHT © HOTEL SHILLA CO., LTD. ALL RIGHTS RESERVED.</p></div>
+</div>
 </body>
 </html>
