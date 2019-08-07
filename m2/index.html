@@ -69,7 +69,10 @@ body, html {height: 100%;
     .sns_lst{width: 150px;height: 150px;margin: 80px auto;background-color: rgb(255, 255, 255);border-radius: 20px; }
     .sns_lst li{width: 60px;height: 60px;float: left;margin: 2.5px;padding-top: 26px;padding-left: 25px;}
     .sns_lst li a{display: block;font-size: 2.5em;color: rgb(97, 97, 97);}
-    .sns_lst li #kakao:hover{color: #ffe600;}
+    .sns_lst li .kakao:hover{color: #ffe600;}
+    .sns_lst li .facebook:hover{color: #1100ff;}
+    .sns_lst li .instagram:hover{color: #ae00ff;}
+    .sns_lst li .twitter:hover{color: #00ccff;}
     .sns_box .close{display: block;position: absolute;color: #000;opacity: 1; text-shadow: 0px 0px 0px #000; left: 62%; top: 13%;}
     
 
@@ -89,7 +92,8 @@ body, html {height: 100%;
     .log_box{background: #fff; width:100%; height: 100%;  margin:auto;}
     .collap_tit{text-align: center;padding-top: 50px;padding-bottom: 20px;}
     .in_frm{display: block; width:300px; height:35px; line-height:35px; border:1px solid #ccc; background-color:#eee;margin: 0 auto;text-indent: 10px;margin-top: 10px;}
-    .btn_fr > input {width:131px; height:38px; background-color:rgb(255, 201, 119); color:000; display: block;float: left; margin-top: 20px; margin-left: 38px;}
+    .btn_fr div{width:131px; height:38px; background-color:rgb(255, 201, 119);display: block;float: left; margin-top: 20px; margin-left: 38px;}
+    .btn_fr div a{clear: both; color: #000;line-height: 38px;margin-left: 30%;}
     
     .mv_page{clear: both;width: 100%;}
     .sec_tit{text-align: center;font-family: fantasy}
@@ -155,7 +159,7 @@ $(document).ready(function(){
 <div class="lst_box">
     <div class="log_fr">
         <i class="xi-profile"></i><br>
-        <button>로그인</button>
+        <button>내정보</button>
     </div>
     <ul class="lst_status">
         <li class="item1">
@@ -186,10 +190,10 @@ $(document).ready(function(){
 </div>
 <div class="sns_box">
     <ul class="sns_lst">
-        <li class="sns1"><a href=""><i class="xi-kakaostory" id="kakao"></i></a></li>
-        <li class="sns2"><a href=""><i class="xi-facebook-official"></i></a></li>
-        <li class="sns3"><a href=""><i class="xi-instagram"></i></a><a href=""></a></li>
-        <li class="sns4"><a href=""><i class="xi-twitter"></i></a></li>
+        <li class="sns1"><a href=""><i class="xi-kakaostory kakao"></i></a></li>
+        <li class="sns2"><a href=""><i class="xi-facebook-official facebook"></i></a></li>
+        <li class="sns3"><a href=""><i class="xi-instagram instagram"></i></a></li>
+        <li class="sns4"><a href=""><i class="xi-twitter twitter"></i></a></li>
     </ul>
     <button class="close"><i class="xi-close-thin"></i></button>
 </div>
@@ -199,8 +203,8 @@ $(document).ready(function(){
         <input type="text" id="m_id" class="in_frm" autofocus placeholder="아이디">
         <input type="password" id="m_pw" class="in_frm" placeholder="비밀번호">
         <fieldset class="btn_fr">
-            <input type="submit" class="btn_frm" value="로그인">
-            <input type="reset" class="btn_frm" value="취소">
+            <div class="log"><a href="">로그인</a></div>
+            <div class="join"><a href="join.html"> 회원가입</a></div>
         </fieldset>
     </form>
     <button class="close"><i class="xi-close-thin"></i></button>
@@ -211,12 +215,12 @@ $(document).ready(function(){
 </div>
 <ul class="ico_lst">
     <li class="item1">
-       <a href="sub1.html#tab1"><img src="./img/bn1.gif" alt="배너1" class="ico"></a> 
+       <a href="sub1.html#tab2"><img src="./img/bn1.gif" alt="배너1" class="ico"></a> 
         <h3 class="ico_tit"></h3>
         <p class="ico_com"></p>
     </li>
     <li class="item2">
-            <a href="sub1.html#tab2"><img src="./img/bn2.jpg" alt="배너2" class="ico"></a>
+            <a href="sub1.html#tab1"><img src="./img/bn2.jpg" alt="배너2" class="ico"></a>
         <h3 class="ico_tit"></h3>
         <p class="ico_com"></p>
     </li>

@@ -31,10 +31,12 @@
     <link rel="stylesheet" href="./xeicon.min.css">
     <link rel="stylesheet" href="./normalize.css">
     <style>
-    body, html {height: 100%;
+    body, html {height: 100%;}
+    li{list-style: none;}
+    a{text-decoration: none;}
     /* font-faily:'Noto Sans', sans-serif */
-    /* font-family:'aps', cursive */ };
-    .hd{position: fixed;width: 100%;height: 50px;clear: both;z-index: 999;}
+    /* font-family:'aps', cursive */
+    .hd{width: 100%;height: 50px;clear: both;z-index: 999;}
     .hd button{display: block;font-size: 1.9em;float: left;position: absolute;}
     .lst_btn{float: left;top: 0.5em;left: 0.5em;}
     .ev{right: 1.5em;top: 0.5em;}
@@ -89,7 +91,8 @@
     .log_box{background: #fff; width:100%; height: 100%;  margin:auto;}
     .collap_tit{text-align: center;padding-top: 50px;padding-bottom: 20px;}
     .in_frm{display: block; width:300px; height:35px; line-height:35px; border:1px solid #ccc; background-color:#eee;margin: 0 auto;text-indent: 10px;margin-top: 10px;}
-    .btn_fr > input {width:131px; height:38px; background-color:rgb(255, 201, 119); color:000; display: block;float: left; margin-top: 20px; margin-left: 38px;}
+    .btn_fr div{width:131px; height:38px; background-color:rgb(255, 201, 119);display: block;float: left; margin-top: 20px; margin-left: 38px;}
+    .btn_fr div a{clear: both; color: #000;line-height: 38px;margin-left: 30%;}
     
     #footer{clear: both; display: block;}
     .footAddress{width: 100vw;font-size: 0.7em;text-align: center;}
@@ -128,16 +131,27 @@ $(document).ready(function(){
 <style>
 /*sub1 만의 style*/
 .content{clear: both;padding-top: 40px;}
+.tb_tit{font-family: 'Sunflower', sans-serif;}
+.tb_subtit{text-indent: 5px; font-size: 16px;font-weight: bold;border-bottom: 2px solid #ffaf64;}
+.tb_subtit p{font-size: 12px;font-weight: normal;line-height: 14px;}
 .tb_box{width: 100%;}
 .tb_box .tb_btn{display: block;width: 33.3333%; line-height: 40px;text-align: center;background: #333;color: #ffffff;position: absolute;top: 50px;z-index: 40;padding-top: 0px;}
 #tab1 .tb_btn{left: 0;}
 #tab2 .tb_btn{left: 33.3333%;}
 #tab3 .tb_btn{left: 66.6666%;}
 .tb_box:target .tb_btn{background: #ffaf64;}
-.tb_con{width: 100%;height: 100vh;display: none;padding-top: 60px;}
+.tb_con{width: 100%;height: 100%;display: none;}
 .tb_box:target .tb_con{display: block;}
 
 .info{width: 100%;height: auto;}
+.menu_wrap{clear: both; width: 100%;height: 100%;text-align: center;}
+
+.list_wrap{width: 95%;height: 100%;margin: 0 auto;line-height: 25px;}
+.list_wrap li{height: 60px; margin-top: 10px;border-bottom: 1px dashed #ff8f25;}
+.sub_wrap{width: 88%;height: 100%;float: left;text-align:justify;}
+.btnTel{float: right;width: 9%;height: 100%;text-align:justify;}
+
+
 </style>
 </head>
 <body>
@@ -165,7 +179,7 @@ $(document).ready(function(){
 <div class="lst_box">
     <div class="log_fr">
         <i class="xi-profile"></i><br>
-        <button>로그인</button>
+        <button>내정보</button>
     </div>
     <ul class="lst_status">
         <li class="item1">
@@ -209,8 +223,8 @@ $(document).ready(function(){
         <input type="text" id="m_id" class="in_frm" autofocus placeholder="아이디">
         <input type="password" id="m_pw" class="in_frm" placeholder="비밀번호">
         <fieldset class="btn_fr">
-            <input type="submit" class="btn_frm" value="로그인">
-            <input type="reset" class="btn_frm" value="취소">
+            <div class="log"><a href="">로그인</a></div>
+            <div class="join"><a href="join.html"> 회원가입</a></div>
         </fieldset>
     </form>
     <button class="close"><i class="xi-close-thin"></i></button>
@@ -223,20 +237,131 @@ $(document).ready(function(){
     <div class="tb_box" id="tab1">
         <a href="#tab1" class="tb_btn">코코이찌방야는?</a>
         <div class="tb_con">
-            <h3 class="tb_tit" style="font-family: 'Sunflower', sans-serif;">코코이찌방야는?</h3>
+            <h3 class="tb_tit">코코이찌방야는?</h3>
             <img src="./img/info.png" alt="" class="info">
         </div>
     </div>
     <div class="tb_box" id="tab2">
         <a href="#tab2" class="tb_btn">메뉴</a>
         <div class="tb_con">
-                <h3 class="tb_tit" style="font-family: 'Sunflower', sans-serif;">메뉴</h3>
+                <h3 class="tb_tit">메뉴</h3>
+                <figure class="menu_wrap">
+                    <img src="./img/best011.png" alt="" class="menu1">
+                    <img src="./img/best021.png" alt="" class="menu2">
+                    <img src="./img/best031.png" alt="" class="menu3">
+                    <img src="./img/best041.png" alt="" class="menu4">
+                    <img src="./img/best051.png" alt="" class="menu5">
+                    <img src="./img/best061.png" alt="" class="menu6">
+                    <img src="./img/best071.png" alt="" class="menu7">
+                </figure>
         </div>
     </div>
     <div class="tb_box" id="tab3">
         <a href="#tab3" class="tb_btn">매장안내</a>
         <div class="tb_con">
-                <h3 class="tb_tit" style="font-family: 'Sunflower', sans-serif;">매장안내</h3>
+                <h3 class="tb_tit">CoCo Ichibanya's<br>SHOP INFO</h3>
+                <h5 class="tb_subtit">매장안내<p>매장을 찾아주시는 고객님께 편안하고 즐거운 식사시간을 제공하겠습니다.</p></h5>
+            <div class="list_wrap">
+                <li>
+                    <div class="sub_wrap">
+                        <strong>강남점</strong>
+                        <span class="tel">02-2051-5510</span>
+                        <span>서울특별시 강남구 강남대로102길 14 (역삼동) 1F</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-2051-5510"><img src="./img/tell.png" alt="강남점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>종로점</strong>
+                        <span class="tel">02-736-5510</span>
+                        <span>서울특별시 종로구 우정국로2길 37(관철동) 청문외국어학원 1F</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-736-5510"><img src="./img/tell.png" alt="종로점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>보라매점</strong>
+                        <span class="tel">02-820-8888</span>
+                        <span>서울특별시 동작구 여의대방로 112(신대방동) 성무관 2F</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-820-8888"><img src="./img/tell.png" alt="보라매점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>청량리역점</strong>
+                        <span class="tel">02-964-5510</span>
+                        <span>서울특별시 동대문구 왕산로 214(전농동) 청량리민자역사 3F</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-964-5510"><img src="./img/tell.png" alt="청량리역점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>압구정로데오점</strong>
+                        <span class="tel">02-3444-5519</span>
+                        <span>서울특별시 강남구 선릉로161길 21-4 (신사동) 1F </span>
+                    </div>
+                    <a class="btnTel" href="tel:02-3444-5519"><img src="./img/tell.png" alt="압구정로데오점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>롯데몰 김포공항점</strong>
+                        <span class="tel">02-6116-5702</span>
+                        <span>서울특별시 강서구 하늘길 38(방화동) 롯데몰김포공항 B2</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-6116-5702"><img src="./img/tell.png" alt="롯데몰 김포공항점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>일산 웨스턴돔점</strong>
+                        <span class="tel">031-904-5510</span>
+                        <span>경기도 고양시 일산동구 정발산로 24(장항동) 웨스턴돔 2F</span>
+                    </div>
+                    <a class="btnTel" href="tel:031-904-5510"><img src="./img/tell.png" alt="웨스턴돔점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>사당역 파스텔시티점</strong>
+                        <span class="tel">02-582-5510</span>
+                        <span>서울특별시 서초구 방배천로 11(방배동) 파스텔시티 2F</span>
+                    </div>
+                    <a class="btnTel" href="tel:02-582-5510"><img src="./img/tell.png" alt="사당역 파스텔시티점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>롯데백화점 평촌점</strong>
+                        <span class="tel">031-8086-9870</span>
+                        <span>경기도 안양시 동안구 시민대로 180(호계동) 롯데백화점 평촌점 7F</span>
+                        
+                    </div>
+                    <a class="btnTel" href="tel:031-8086-9870"><img src="./img/tell.png" alt="롯데백화점 평촌점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>부천역점</strong>
+                        <span class="tel">032-667-5510</span>
+                        <span>경기도 부천시 원미구 부천로9번길 24(심곡동) 1F</span>
+                    </div>
+                    <a class="btnTel" href="tel:032-667-5510"><img src="./img/tell.png" alt="부천역점 전화걸기" /></a>
+                </li>
+
+                <li>
+                    <div class="sub_wrap">
+                        <strong>합정역 메세나폴리스점</strong>
+                        <span class="tel">02-324-5510</span>
+                        <span></span>서울특별시 마포구 양화로 45(서교동) 메세나폴리스2F
+                    </div>
+                    <a class="btnTel" href="tel:02-324-5510"><img src="./img/tell.png" alt="합정역 메세나폴리스점 전화걸기" /></a>
+                </li>
+            </div>
         </div>
     </div>
 </div>
