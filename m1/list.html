@@ -25,32 +25,13 @@
     </style>
     <script src="main.js"></script>
     <style>
-    body, html { width:100%; height:100%; overflow:hidden; background:#eee;background-repeat: repeat;}    
-    .vs { position:absolute; width:90%; left:5%; top:80px; 
-    max-height:70%; overflow:hidden; z-index:1; }
-    .img_box { width:500%; height:auto; }
-    .img_box li { width:20%; height:auto; float:left; }
-    .img_box li a { display:block; width:100%; }
-    .img_box li img { display:block; width:100%; height:auto; }
-    .btn_box { position:absolute; bottom:10px; width:100px; 
-    left:calc(50% - 50px); }
-    .btn_box li { width:20px; height:20px; float:left; }
-    .btn_box li button { display:block; width:10px; height:10px; 
-    border-radius:6px; background:#333; }
-    .btn_box li.on button { background:#81d100; }
-
-    .shortcut { width:198px; margin:50px auto; margin-top: 1.7em;border-right: 1px solid #eee;border-bottom: 1px solid #eee;height: 121px;}
-    .shortcut li { float:left; width:65px; border-left: 1px solid #eee;border-top: 1px solid #eee;height: 64px;}
-    .shortcut li a{display: block;}
-    .shortcut li span{display: block;}
-    .shortcut li span[class*=ico]{background-repeat: no-repeat;background-image: url("./img/split1.png");width: 64px;height: 42px;}
-    .shortcut li span.ico1{background-position: 5px 0;}
-    .shortcut li span.ico2{background-position: -50px -0px;}
-    .shortcut li span.ico3{background-position: -163px -0px;}
-    .shortcut li span.ico4{background-position: -50px -98px;}
-    .shortcut li span.ico5{background-position: -104px -98px;}
-    .shortcut li span.ico6{background-position: -102px -0px;}
-    .shortcut li span.txt{color: #333;font-size: 0.85em;text-align: center;}
+    body, html { width:100%; height:100%; /*background-image: url("./img/pat1.png");background-repeat: repeat;*/background: #333;}    
+    .hd{height: 60px;z-index: 80;}
+    .ft{position: fixed;bottom: 0;left: 0;z-index: 80;margin-top: 10px;}
+    .page_title{text-align: center;line-height: 2;color: #ffffff;margin-top: 20px;}
+    .service_lst{clear: both;overflow: scroll;padding-bottom: 140px;padding-top: 1em;background: #333;}
+    .service_lst li{line-height: 3;}
+    .service_lst li a{display: block;line-height: 3;font-size: 1.2em;text-indent: 1.5em;color: #fff;border-top: 1px solid #fff;border-bottom: 1px solid #000;background: #333;}
     </style>
 </head>
 <body>
@@ -190,73 +171,19 @@
             <label for="ck2" class="close"></label>  
         </nav>
     </header>
-    <figure class="vs">
-        <ul class="img_box">
-            <li class="item1">
-                <a href="">
-                    <img src="./img/bn3.gif" alt="베너3">
-                    <h2 class="vs_tit"></h2>
-                </a>
-            </li>
-            <li class="item2">
-                <a href="">
-                    <img src="./img/bn4.gif" alt="베너4">
-                    <h2 class="vs_tit"></h2>
-                </a>
-            </li>
-            <li class="item3">
-                <a href="">
-                    <img src="./img/bn5.gif" alt="베너5">
-                    <h2 class="vs_tit"></h2>
-                </a>
-            </li>
-        </ul>
-        <ul class="btn_box">
-            <li class="item1 on"><button></button></li>
-            <li class="item2"><button></button></li>
-            <li class="item3"><button></button></li>
-        </ul>
-    </figure>
-    <nav class="shortcut">
-        <ul>
-            <li class="item1">
-                <a href="list.html" rel="external">
-                    <span class="ico1"></span>
-                    <span class="txt">목록보기</span>
-                </a>
-            </li>
-            <li class="item2">
-                <a href="join.html" rel="external">
-                    <span class="ico2"></span>
-                    <span class="txt">회원가입</span>
-                </a>
-            </li>
-            <li class="item3">
-                <a href="tel:1588-9090">
-                    <span class="ico3"></span>
-                    <span class="txt">전화상담</span>
-                </a>
-            </li>
-            <li class="item4">
-                <a href="sms:#11109090">
-                    <span class="ico4"></span>
-                    <span class="txt">문자상담</span>
-                </a>
-            </li>
-            <li class="item5">
-                <a href="mailto:ksb450424@naver.com">
-                    <span class="ico5"></span>
-                    <span class="txt">이메일</span>
-                </a>
-            </li>
-            <li class="item6">
-                <a href="memo.html" rel="external">
-                    <span class="ico6"></span>
-                    <span class="txt">글쓰기</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+    <h2 class="page_title">서비스목록</h2>
+    <ul class="service_lst">
+        <li class="item1"><a href="">지방병무청 바로가기</a></li>
+        <li class="item2"><a href="">병역판정검사</a></li>
+        <li class="item3"><a href="">현역입영</a></li>
+        <li class="item4"><a href="">군지원</a></li>
+        <li class="item5"><a href="">국민참여마당(집단지성)</a></li>
+        <li class="item6"><a href="">사회복무</a></li>
+        <li class="item7"><a href="">산업지원</a></li>
+        <li class="item8"><a href="">동원예비군</a></li>
+        <li class="item9"><a href="">국외여행/체재</a></li>
+        <li class="item10"><a href="">사회복무포털</a></li>
+    </ul>
     <footer class="ft">
         <div class="ft_wrap">
             <p class="copyright">
