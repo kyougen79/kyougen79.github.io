@@ -116,7 +116,7 @@
         .aside_ft td{padding: 5px;padding-top: 10px;}
 
         /* Gallery */
-        .gallery{width: 100%;height: 100%;}
+        .gallery{width: 100%;height: 100%;display: none;}
         .gal_wrap{width: 45%;height: 0;padding-top: 50px;}
         .col {display: inline-block; padding: 30px;}
         .card {width: 200px; height: 200px; margin: auto; position: relative; text-align: center; cursor: pointer; font-size:18px;}
@@ -146,7 +146,18 @@
         transform: scale(1, 1);
         }
         }
-        .ex_wrap{width: 50%;height: 85%; float: right; border: 1px solid #000;margin-right: 2%}
+        .ex_wrap{width: 50%;height: 85%; float: right;margin-right: 2%;}
+        .ex_wrap div{position: absolute;}
+        .box {opacity: 0;transition: 0.6s;}
+
+        /* contect */
+        .lst { width:1000px; margin:100px auto; height:200px; }
+        .lst li { width:200px; float:left; height:150px; }
+        .lst li a { display:block; width:200px; height:150px; overflow:hidden;  }
+        .lst li img { width:200px; height:150px;  transform:scale(1); transition:0.8s;margin-bottom: 30px;padding: 30px;}
+        .lst li:hover img { transform:scale(1.5); }
+        .lst li span{top: 20px;}
+        .contact{display: none;}
     </style>    
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script>
@@ -155,6 +166,35 @@
                 $(".intro_box").css("display","block");
                 $(".intro_circle").css("opacity","0");
                 $(".main_wrap").css("display","block");
+                $(".gallery").css("display","block")
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".click1").click(function(){
+                $(".box1").css("opacity","1");
+            });
+            $(".click2").click(function(){
+                $(".box2").css("opacity","1");
+            });
+            $(".click3").click(function(){
+                $(".box3").css("opacity","1");
+            });
+            $(".click4").click(function(){
+                $(".box4").css("opacity","1");
+            });
+            $(".click5").click(function(){
+                $(".box5").css("opacity","1");
+            });
+            $(".click6").click(function(){
+                $(".box6").css("opacity","1");
+            });
+            $(".click7").click(function(){
+                $(".box7").css("opacity","1");
+            });
+            $(".click8").click(function(){
+                $(".box8").css("opacity","1");
             });
         });
     </script>
@@ -196,7 +236,7 @@
                 <h2>My Personality Graph</h2>
                 <div class="bar">
                     <div class="bar_to1"></div>
-                    <span class="le">54%<br>내형형</span><span class="ra">46%<br>외형형</span>
+                    <span class="le">54%<br>내향형</span><span class="ra">46%<br>외향형</span>
                 </div>
                 <div class="bar">
                     <div class="bar_to2"></div>
@@ -319,72 +359,73 @@
     <figure class="gallery" id="page3">
         <div class="gal_wrap">
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click1">
             <div class="f-card"><i class="material-icons">반응형1</i></div>
-            <div class="b-card"><i class="material-icons">Montblanc</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/mont_logo.png" alt="MONTBLANC"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click2">
             <div class="f-card"><i class="material-icons">반응형2</i></div>
-            <div class="b-card"><i class="material-icons">TWG</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/TWG_logo.png" alt="TWG"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click3">
             <div class="f-card"><i class="material-icons">반응형3</i></div>
-            <div class="b-card"><i class="material-icons">신라호텔</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/shilla_logo.png" alt="shilla"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
-            <div class="f-card"><i class="material-icons">반응형4</i></div>
-            <div class="b-card"><i class="material-icons">samsungfill</i></div>
-        </div>
-        </div>
-        <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click4">
             <div class="f-card"><i class="material-icons">데스크탑1</i></div>
-            <div class="b-card"><i class="material-icons">UNICEF</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/dokki_logo.png" alt="dokki"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click5">
             <div class="f-card"><i class="material-icons">데스크탑2</i></div>
-            <div class="b-card"><i class="material-icons">두끼떡볶이</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/unicef_logo.png" alt="unicef"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click6">
             <div class="f-card"><i class="material-icons">모바일1</i></div>
-            <div class="b-card"><i class="material-icons">병무청</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/MMA_logo.png" alt="병무청"></i></div>
         </div>
         </div>
         <div class="col" id="model-1">
-        <div class="card">
+        <div class="card click7">
             <div class="f-card"><i class="material-icons">모바일2</i></div>
-            <div class="b-card"><i class="material-icons">코코이찌방야</i></div>
-        </div>
-        </div>
-        <div class="col" id="model-1">
-        <div class="card">
-            <div class="f-card"><i class="material-icons">fingerprint</i></div>
-            <div class="b-card"><i class="material-icons">favorite</i></div>
+            <div class="b-card"><i class="material-icons"><img src="./img/coco_logo.png" alt="코코이찌방야"></i></div>
         </div>
         </div>
     </div>
     <div class="ex_wrap">
-        <div class="box1"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="box5"></div>
-        <div class="box6"></div>
-        <div class="box7"></div>
-        <div class="box8"></div>
-        <div class="box9"></div>
+        <div class="box box1"><img src="./img/mont_pro.jpg" alt=""></div>
+        <div class="box box2"><img src="./img/TWG_pro.jpg" alt=""></div>
+        <div class="box box3"><img src="./img/shiila_pro.jpg" alt=""></div>
+        <div class="box box4"><img src="./img/dokki_pro.jpg" alt=""></div>
+        <div class="box box5"><img src="./img/unicef_pro.jpg" alt=""></div>
+        <div class="box box6"><img src="./img/MMA_pro.jpg" alt=""></div>
+        <div class="box box7"><img src="./img/coco_pro.jpg" alt=""></div>
     </div>
     </figure>
-    <div class="contact" id="page4"></div>
+    <div class="contact" id="page4">
+        <ul class="lst">
+            <li class="item1">                
+                <img src="./img/nav.png" alt="nav">
+                <span>세종특별자치시 새롬중앙로 89 새뜸마을 7단지 ***동 ***호</span>
+            </li>
+            <li class="item2">
+                    <img src="./img/phone1.png" alt="phone">
+                    <span>010-2393-9888</span>
+            </li>
+            <li class="item3">
+                    <img src="./img/email.png" alt="email">
+                    <span>kyougen79@gmail.com</span>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
